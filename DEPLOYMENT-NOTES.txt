@@ -1,0 +1,21 @@
+SIGNAL SPRITES — MANUAL DEPLOYMENT
+
+This folder is a complete static website. No build command is required.
+
+GitHub Pages:
+1. Upload every file and folder to the repository root.
+2. Open Settings > Pages.
+3. Select the main branch and root folder, then save.
+
+Netlify:
+Drag and drop this entire folder into Netlify Drop.
+
+Vercel:
+Import the repository. Leave the framework preset as Other and the output
+directory as the repository root.
+
+Official links already included:
+- https://x.com/SignalSprites
+- https://opensea.io/collection/signal-sprites/overview
+
+All official schedule times are displayed in UTC.
