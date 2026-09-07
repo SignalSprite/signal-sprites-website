@@ -13,11 +13,9 @@
     <a class="brand" href="#top" aria-label="Signal Sprites home"><span class="brand-mark"></span>Signal Sprites</a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" aria-label="Primary navigation">
+      <a href="#top">Home</a>
       <a href="#universe">Universe</a>
       <a href="#realms">Realms</a>
-      <a href="#rarity">Rarity</a>
-      <a href="#mint">Mint</a>
-      <a href="https://x.com/SignalSprites" target="_blank" rel="noreferrer">X</a>
     </nav>
   </header>
 
@@ -36,7 +34,6 @@
         <dl class="hero-stats">
           <div><dt>Total Supply</dt><dd>3,333</dd></div>
           <div><dt>Realms</dt><dd>10</dd></div>
-          <div><dt>Per Realm</dt><dd>333</dd></div>
           <div><dt>Special Signals</dt><dd>3</dd></div>
         </dl>
       </div>
@@ -64,26 +61,6 @@
         <p>Select a Realm to open its transmission and discover its place in the universe.</p>
       </div>
       <div class="realm-grid" id="realm-grid"></div>
-    </section>
-
-    <section class="section rarity-section" id="rarity">
-      <div class="section-heading">
-        <div><div class="section-label">Frequency Classes</div><h2>Rarity Distribution</h2></div>
-        <p>Every token has a unique collection number and Signal Number, even when it shares the artwork of its Realm.</p>
-      </div>
-      <div class="rarity-grid">
-        <article class="rarity mythic"><span>11</span><h3>Mythic</h3><p>0.33%</p></article>
-        <article class="rarity legendary"><span>50</span><h3>Legendary</h3><p>1.50%</p></article>
-        <article class="rarity epic"><span>120</span><h3>Epic</h3><p>3.60%</p></article>
-        <article class="rarity rare"><span>330</span><h3>Rare</h3><p>9.90%</p></article>
-        <article class="rarity uncommon"><span>920</span><h3>Uncommon</h3><p>27.60%</p></article>
-        <article class="rarity common"><span>1,902</span><h3>Common</h3><p>57.07%</p></article>
-      </div>
-      <div class="special-numbers">
-        <p class="section-label">Encoded Editions</p>
-        <h3>Some numbers carry stronger frequencies.</h3>
-        <div class="number-row"><span>001</span><span>007</span><span>033</span><span>111</span><span>222</span><span>333</span><span>3333</span></div>
-      </div>
     </section>
 
     <section class="section mint-section" id="mint">
@@ -121,7 +98,7 @@
   <dialog id="realm-dialog" aria-labelledby="dialog-title">
     <button class="dialog-close" aria-label="Close Realm transmission">Close</button>
     <div class="dialog-media"><img id="dialog-image" alt=""></div>
-    <div class="dialog-copy"><p class="section-label" id="dialog-number"></p><h2 id="dialog-title"></h2><div id="dialog-lore"></div><div class="dialog-meta"><span>333 Editions</span><span id="dialog-signal"></span></div></div>
+    <div class="dialog-copy"><p class="section-label" id="dialog-number"></p><h2 id="dialog-title"></h2><div id="dialog-lore"></div><div class="dialog-meta"><span id="dialog-signal"></span></div></div>
   </dialog>
   <script src="app.js"></script>
 </body>
