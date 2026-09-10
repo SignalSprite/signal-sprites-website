@@ -39,15 +39,3 @@ const menu=document.querySelector("#site-nav");
 const toggle=document.querySelector(".menu-toggle");
 toggle.addEventListener("click",()=>{const open=menu.classList.toggle("open");toggle.setAttribute("aria-expanded",String(open))});
 menu.addEventListener("click",()=>{menu.classList.remove("open");toggle.setAttribute("aria-expanded","false")});
-
-const launch=new Date("2026-09-10T12:50:00Z").getTime();
-const countdown=document.querySelector("#countdown");
-function updateCountdown(){
-  const distance=Math.max(0,launch-Date.now());
-  const values=[Math.floor(distance/86400000),Math.floor(distance/3600000)%24,Math.floor(distance/60000)%60,Math.floor(distance/1000)%60];
-  const labels=["Days","Hours","Minutes","Seconds"];
-  countdown.innerHTML=values.map((v,i)=>`<span>${String(v).padStart(2,"0")}<small>${labels[i]}</small></span>`).join("");
-  if(distance===0)document.querySelector(".countdown-label").textContent="GTD phase has begun";
-}
-updateCountdown();
-setInterval(updateCountdown,1000);
